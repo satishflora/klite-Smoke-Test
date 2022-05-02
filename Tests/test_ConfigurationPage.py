@@ -1,5 +1,5 @@
 import pytest
-from Tests.test_Base import BaseTest
+from Tests.Base import BaseTest
 from Pages.ConfigurationPage import ConfigurationPage
 
 class Test_Configuration(BaseTest):

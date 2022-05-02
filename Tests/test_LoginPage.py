@@ -1,12 +1,12 @@
 from Pages.IndicesPage import IndicesPage
-from Tests.test_Base import BaseTest
+from Tests.Base import BaseTest
 from Pages.LoginPage import LoginPage
 from Pages.ConfigurationPage import ConfigurationPage
 from Config.config import TestData
 
 
 class Test_Login(BaseTest):
-
+#login test cases
     def test_login_page_opening_successfully(self):
         self.configpage = ConfigurationPage(self.driver)
         self.loginpage = LoginPage(self.driver)
