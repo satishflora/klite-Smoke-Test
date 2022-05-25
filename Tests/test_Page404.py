@@ -7,7 +7,7 @@ from Pages.LoginPage import LoginPage
 from Pages.ConfigurationPage import ConfigurationPage
 from Config.config import TestData
 
-
+#test
 class Test_Page404(BaseTest):
 
     def test_404_page_displaying_before_login_and_redirected_back_to_login(self):

@@ -17,4 +17,5 @@ def init_driver(request):
         web_driver.get(TestData.BASE_URL)
         request.cls.driver = web_driver
         yield
-        #web_driver.close()
+        web_driver.quit()
+
