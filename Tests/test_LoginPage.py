@@ -36,6 +36,20 @@ class Test_Login(BaseTest):
         self.headertext = self.indicespage.check_indices_header_text_displaying()
         assert self.headertext
 
+    def test_unauthorized_user_should_not_be_able_to_login(self):
+        self.configpage = ConfigurationPage(self.driver)
+        self.loginpage = LoginPage(self.driver)
+        self.configpage.click_on_getStarted_button()
+        self.loginpage.do_login("test", "test")
+        self.text = self.loginpage.check_message_diplaying()
+        assert self.text == "Please contact administrator for access."
+
+
+
+
+
+
+
 
 
 
