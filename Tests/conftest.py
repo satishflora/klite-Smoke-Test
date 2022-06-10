@@ -9,8 +9,8 @@ from Config.config import TestData
 @pytest.fixture(params=["chrome"], scope='function')
 def init_driver(request):
     if request.param == "chrome":
-        web_driver = webdriver.Chrome(service=Service(executable_path=TestData.CHROME_EXECUTABLE_PATH))
-        #web_driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+        #web_driver = webdriver.Chrome(service=Service(executable_path=TestData.CHROME_EXECUTABLE_PATH))
+        web_driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
         web_driver.implicitly_wait(10)
         web_driver.delete_all_cookies()
         web_driver.maximize_window()
