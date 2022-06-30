@@ -2,7 +2,7 @@
 
 class TestData:
     CHROME_EXECUTABLE_PATH = "/home/trantorchd.com/satish.kumar/PycharmProjects/chromedriver"
-    BASE_URL = "https://klite-fiq-886f4f01-3a3b-456b.fiq-dev.com/"
+    BASE_URL = "https://fortressiq-k-lite-serverless-vx6j3hrgca-ue.a.run.app/"
     USERNAME = "admin"
     PASSWORD = "admin"
     INDEXPATTERN = "event_logs"
