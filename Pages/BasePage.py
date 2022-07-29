@@ -25,3 +25,8 @@ class BasePage:
         element = WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located(by_locator))
         return element.text
 
+    def do_click_by_action(self, by_locator):
+        action = ActionChains(self.driver)
+        action.click(on_element=by_locator)
+        action.perform()
+

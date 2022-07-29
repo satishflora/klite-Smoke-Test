@@ -1,2 +1,2 @@
-class Tesr_Indices():
+class Test_Indices():
     pass

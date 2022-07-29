@@ -16,9 +16,6 @@ class IndicesPage(BasePage):
     HEADER_TEXT = (By.XPATH, "//div[@class='ant-col ant-col-13 user-edit']")
     WELCOME_TEXT = (By.XPATH, "//div[@class='ant-col user-header']")
 
-
-
-
     """Constructor of the configuration page class"""
     def __init__(self, driver):
         super().__init__(driver)
